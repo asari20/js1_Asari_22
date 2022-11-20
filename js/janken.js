@@ -153,18 +153,20 @@ $('#quite').on('click',function(){
     window.location.reload();
 });
 
-$('#more').on('click',function(){
-    $('#lose').fadeOut(1)
+// $('#more').on('click',function(){
+//     $('#lose').fadeOut(1)
     
-    nextReset()
-    lv = 1;
-    time =1500; 
+//     nextReset()
+//     lv = 1;
+//     time =1500; 
 
-    displayChange() 
-    hundImg();
-    hundApper();
+//     displayChange() 
+//     hundImg();
+//     hundApper();
 
-});
+// });
+// 選択して負けて、もう一度を押した場合にエラーあり。
+// Topに戻るボタンのみでDeploy
 
 
 
