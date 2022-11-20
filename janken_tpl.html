@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="js/jquery-3.6.1.min.js"></script>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/sample.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+
+<title>あとだしじゃんけん</title>
+
+
+</head>
+<body>
+
+<header>
+  <h1 class="title">
+    <span>あ</span>
+    <span>と</span>
+    <span>だ</span>
+    <span>し</span>
+    <span>じゃ</span>
+    <span>ん</span>
+    <span>け</span>
+    <span>ん</span>
+  </h1>
+</header>
+
+<main>
+
+  <!-- Top -->
+  <section id="top" class="top">
+    <div class="top_bg">
+      
+      
+      <h2 class="top_title">
+        <span class="a">あ</span>
+        <span class="to">と</span>
+        <span class="da">だ</span>
+        <span class="shi">し</span><br>
+        <span class="ja">じゃ</span>
+        <span class="n1">ん</span>
+        <span class="ke">け</span>
+        <span class="n2">ん</span>
+      
+      </h2>
+
+      <div class="top_rule">
+    
+        <p class="rule_text">
+          ルール<br><br>
+          これから『じゃんけんポン』のリズムでグー、チョキ、パーのどれかが表示されます。<br>
+          表示された手に「勝てる手」を制限時間内に選んでください。<br>
+          制限時間は徐々に短くなります。自分の限界に挑みましょう！！<br>
+
+        </p>
+      </div>
+
+  
+    </div>
+
+    <div id="start" class="start_btn">Start</div>
+
+  </section>
+
+  <section id="main" class="main" style="display: none;">
+    <div class="main_top">
+      <div class="enemy_hund">
+
+        <div id="enemy_title" class="enemy_title">
+          <span id="et1" style="visibility: hidden;">じゃん</span><span id="et2" style="visibility: hidden;">けん</span><br>
+          <span id="et3"style="visibility: hidden;">ポン!!</span>
+        </div>
+
+        <div id="eneHund_img" class="eneHund_img" style="display: none;"></div>
+        
+
+      </div>
+      <div class="my_hund">
+
+        <ul id="myhund_option">
+          <li id="gu_btn">グー</li>
+          <li id="cho_btn">チョキ</li>
+          <li id="par_btn">パー</li>
+        </ul>
+
+      </div>
+
+
+
+    </div>
+    <div class="main_bottom">
+
+      <div class="timer_wrap">
+        <p class="timer_text">残り時間：</p>
+        <div class="timer"><div id="timer_inner" style="display: none;"></div></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="trans" class="trans" style="display: none;">
+    <div id="trans_text" class="trans_text">
+     レベル：
+    </div>
+  </section>
+
+
+  <section id="win" class="win" style="display: none;">
+    <div id="win_text" class="win_text">
+      Good!!<br>
+      次のレベル：
+
+    </div>
+
+  </section>
+
+  <section id="lose" class="lose" style="display: none;">
+    <div id="lose_text" class="lose_text">
+      <span id="lose_lv"></span><span>で終了です。</span><br>
+      <span id="lose_var"></span>
+    </div>
+    
+    <div class="lose_option">
+      <div id="quite" class="quite btn">やめる</div>
+      <div id="more" class="more btn">もう一度挑戦する</div>
+    </div>
+
+  </section>
+
+
+</main>
+
+<footer></footer>
+
+<script src="js/janken.js"></script>
+
+</body>
+</html>
